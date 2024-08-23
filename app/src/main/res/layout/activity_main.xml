@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/clmain"
+    android:layout_height="match_parent"
+    tools:context="com.coding.myapplication.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextFT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:hint="Fill your Height in Feet!"
+        android:inputType="number"
+
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <EditText
+        android:id="@+id/editTextIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="266dp"
+        android:layout_marginBottom="163dp"
+        android:hint="Fill your Height in Inches!"
+        android:inputType="number"
+
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/textresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+
+    <EditText
+        android:id="@+id/editTextKG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Fill your Weight in KG!"
+        android:inputType="number"
+
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:background="@color/purple_200"
+        android:text="Check!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKG" />
+
+    <TextView
+        android:id="@+id/textresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="217dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:gravity="center"
+        android:text="Result"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIN" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
